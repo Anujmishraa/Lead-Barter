@@ -1,0 +1,106 @@
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import img1 from "../assets/BA Flyer.png"
+import img2 from "../assets/EPP Flyer.png"
+import img3 from "../assets/HRMS Flyer.png"
+import img4 from "../assets/Medical Coding.png"
+import img5 from "../assets/Hrms.png.png"
+import img6 from "../assets/Epp.png"
+import img7 from "../assets/Business.png"
+import img8 from "../assets/Medical.png"
+
+
+// import './styles.css';
+
+// import required modules
+import {Autoplay, Pagination } from 'swiper/modules';
+
+
+
+export default function CourseSlider() {
+    const data = [
+        {   title: "Human Resource Management System ",
+            img : img5,
+            price: "3000",
+        },
+        {   title: "Professional English",
+            img : img6,
+            price: "4000",
+        },
+        {   title: "Business analyst",
+            img : img7,
+            price: "3500",
+        },
+        {   title: "Medical Coding",
+            img : img8,
+            price: "5000",
+        },
+        {   title: "Human Resource Management System ",
+          img : img5,
+          price: "3000",
+      },
+      {   title: "Professional English",
+          img : img6,
+          price: "4000",
+      },
+      {   title: "Business analyst",
+          img : img7,
+          price: "3500",
+      },
+      {   title: "Medical Coding",
+          img : img8,
+          price: "5000",
+      },
+        // {   title: "BA Flyer",
+        //     img : img1,
+        //     price: "3000",
+        // },
+        // {   title: "BA Flyer2",
+        //     img : img2,
+        //     price: "4000",
+        // },
+        // {   title: "BA Flyer3",
+        //     img : img3,
+        //     price: "3500",
+        // },
+        // {   title: "BA Flyer4",
+        //     img : img4,
+        //     price: "5000",
+        // },
+        
+    ]
+  return (
+    <>
+      <Swiper
+        slidesPerView={4}
+        spaceBetween={30}
+        pagination={{
+          clickable: true,
+        }}
+        autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
+        modules={[Autoplay, Pagination]}
+        className="mySwiper pb-16"
+      >
+        {
+            data.map((d, i) => (
+                <SwiperSlide key={i} className=' w-[10rem] '>
+                    <img width={250} src={d.img} alt="" />
+                    <p>{d.title}</p>
+                    <p>Price :Rs {d.price}</p>
+                </SwiperSlide>
+                
+            ) )
+        }
+        
+      </Swiper>
+    </>
+  );
+}
