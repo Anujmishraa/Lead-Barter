@@ -79,11 +79,12 @@ export default function CourseSlider() {
       <Swiper
         slidesPerView={4}
         spaceBetween={30}
+        loop = {true}
         pagination={{
           clickable: true,
         }}
         autoplay={{
-            delay: 2000,
+            delay: 2300,
             disableOnInteraction: false,
           }}
         modules={[Autoplay, Pagination]}
@@ -91,11 +92,12 @@ export default function CourseSlider() {
       >
         {
             data.map((d, i) => (
-                <SwiperSlide key={i} className=' w-[10rem] '>
-                    <img width={250} src={d.img} alt="" />
-                    <p>{d.title}</p>
-                    <p>Price :Rs {d.price}</p>
+              <SwiperSlide key={i} className=' w-[10rem] hover:scale-105 duration-200 pt-3 shadow-lg p-3 '>
+                    <img width={250} src={d.img}  alt="" className=' w-[17rem] h-[13rem] shadow' />
+                    <p className=' text-lg text-center mt-3 h-[3rem] '>{d.title}</p>
+                    <p className=' text-blue-600'>Price Rs {d.price}</p>
                 </SwiperSlide>
+          
                 
             ) )
         }

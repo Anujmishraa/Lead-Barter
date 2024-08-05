@@ -22,8 +22,8 @@ export const HomePage = () => {
       {/* section 2 */}
       <section className=' w-10/12 mx-auto '>
         <div className=' text-center mb-10'>
-          <h2 className=' text-5xl font-semibold'>Our Courses</h2>
-          <p className=' text-xl'>Choose from online video courses with new additions published every month</p>
+          <h2 className=' text-5xl font-semibold text-blue-600 my-5'>Our Courses</h2>
+          <p className=' text-xl text-gray-600'>Choose from online video courses with new additions published every month</p>
         </div>
         <CourseSlider />
       </section>
@@ -34,9 +34,9 @@ export const HomePage = () => {
           <img src={studentImg} alt="" />
         </div>
         <div className=' w-[70%] flex justify-center flex-col p-28 bg-[#EFFDFF] '>
-          <p className=' text-5xl font-semibold leading-[3.5rem] '>The world’s largest selection of online courses</p>
-          <p className=' mt-4 text-lg text-[#111111aa]'>Millions of people have used Kingster to decide which online course to take. We aggregate courses from many universities to help you find the best courses on almost any subject, wherever they exist. Our goal is to make online education work for everyone.</p>
-          <button className=' bg-blue-500 hover:bg-blue-600 rounded px-3 py-1 w-[6rem] text-white text-xl mt-5'>
+          <p className=' text-5xl font-semibold leading-[3.5rem] '>The world's largest selection of online courses</p>
+          <p className=' mt- text-lg text-[#111111aa]'>Millions of people have used Kingster to decide which online course to take. We aggregate courses from many universities to help you find the best courses on almost any subject, wherever they exist. Our goal is to make online education work for everyone.</p>
+          <button className=' button2 bg-blue-500 rounded px-3 py-1 w-[6rem] text-white text-xl mt-5'>
             Courses
           </button>
         </div>
@@ -44,7 +44,7 @@ export const HomePage = () => {
 
       {/* section 4 */}
       <section className=' bg-[#F3EAD8]'>
-        <div className="w-10/12 mx-auto">
+        <div className="w-10/12 mx-auto py-9">
           <InstructorSlider />
         </div>
       </section>

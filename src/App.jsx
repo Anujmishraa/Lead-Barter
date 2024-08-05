@@ -11,6 +11,7 @@ import { ContactUs } from './Pages/ContactUs'
 import { Login } from './Pages/Login'
 import {SignUp} from './Pages/SignUp'
 import { Courses } from './Pages/Courses'
+import { Otp } from './Components/Otp'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -25,6 +26,7 @@ function App() {
         <Route path='/Login' element={<Login/>} />
         <Route path='/SignUp' element={<SignUp/>} />
         <Route path='/Courses' element={<Courses/>} />
+        <Route path='/Otp' element={<Otp/>} />
       </Routes>
      <Footer/>
     </>
