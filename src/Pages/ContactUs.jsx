@@ -30,7 +30,9 @@ export const ContactUs = () => {
                                 </div>
                             </div>
                             <div className="p-2 w-full">
+                                <div className='h-8'>
                                 <button className="button2 flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button>
+                                </div>
                             </div>
                             
                         </div>

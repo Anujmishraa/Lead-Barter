@@ -17,17 +17,19 @@ export const Navbar = () => {
                         <Link to={"/AboutUs"} className="mr-5 cursor-pointer text-xl hover:text-blue-700 ">About</Link>
                         <Link to={"/ContactUs"} className="mr-5 cursor-pointer text-xl hover:text-blue-700 ">Contact Us</Link>
                     </nav>
+                    <div className='h-8'>
+                        
                     <button className=" button2 inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 mr-3" onClick={()=> navigate("/Login")}>Sign In 
-                        {/* <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                            <path d="M5 12h14M12 5l7 7-7 7"></path>
-                        </svg> */}
+                    
+                    </button>
+                            </div>
+
+                            <div className='h-8'>
+                                
+                    <button className=" ml-5 button2 inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0" onClick={()=> navigate("/SignUp")}>Sign Up
                         
                     </button>
-                    <button className="button2 inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0" onClick={()=> navigate("/SignUp")}>Sign Up
-                        {/* <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                            <path d="M5 12h14M12 5l7 7-7 7"></path>
-                        </svg> */}
-                    </button>
+                            </div>
                 </div>
             </header>
         </div>

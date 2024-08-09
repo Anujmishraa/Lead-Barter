@@ -76,9 +76,9 @@ export const Footer = () => {
                 </div>
                 <div className="bg-gray-100">
                     <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-                        <p className="text-gray-500 text-sm text-center sm:text-left">© 2020 Tailblocks —
+                        {/* <p className="text-gray-500 text-sm text-center sm:text-left">© 2020 Tailblocks —
                             <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" className="text-gray-600 ml-1" target="_blank">@knyttneve</a>
-                        </p>
+                        </p> */}
                         <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
                             <a className="text-gray-500">
                                 <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">

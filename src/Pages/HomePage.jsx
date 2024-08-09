@@ -3,6 +3,7 @@ import hero1 from '../assets/student1.jpg'
 import studentImg from "../assets/certificate1.jpg"
 import CourseSlider from '../Components/CourseSlider'
 import InstructorSlider from '../Components/InstructorSlider'
+import src1 from "../assets/src1.png.jpg"
 
 
 export const HomePage = () => {
@@ -15,7 +16,7 @@ export const HomePage = () => {
           <p className=' text-2xl font-semibold w-[32rem] '>Learn 100% online with world-class universities and industry experts</p>
         </div>
         <div className=' w-[50%] '>
-          <img src={hero1} alt="" />
+          <img src={src1} alt="" height={120} />
         </div>
       </section>
 
