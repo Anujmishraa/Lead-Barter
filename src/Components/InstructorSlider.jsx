@@ -6,10 +6,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import img1 from '../assets/man1.jpg'
-import img2 from '../assets/Man2.jpg'
-import img3 from '../assets/man3.jpg'
-
+// import img1 from '../assets/man1.jpg'
+// import img2 from '../assets/Man2.jpg'
+// import img3 from '../assets/man3.jpg'
+import nidhi from "../assets/Nidhi.jpg"
+import avinash from "../assets/Avinash.jpg"
+import shreyash from "../assets/shreyash.jpg"
+import muskan from "../assets/Muskan.jpg"
+import Anuj from "../assets/Anuj.jpeg"
 // import './styles.css';
 
 // import required modules
@@ -18,22 +22,34 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 export default function InstructorSlider() {
   const data = [
     {
+      name: "Nidhi Tiwari",
+      img: nidhi,
+      dis: 'Everybody is differe, which is why we offer styles for every body. Laborum fuga incidunt laboriosam voluptas inre, delectus dignissimos facilis neque nulla earum.',
+      role: 'HRMS Trainer',
+    },
+    {
+      name: "Avinash Pandey",
+      img: avinash,
+      dis: 'Everybody is differe, which is why we offer styles for every body. Laborum fuga incidunt laboriosam voluptas inre, delectus dignissimos facilis neque nulla earum.',
+      role: 'Senior Teacher',
+    },
+    {
+      name: "Shreyash Chavhan",
+      img: shreyash,
+      dis: 'Everybody is differe, which is why we offer styles for every body. Laborum fuga incidunt laboriosam voluptas inre, delectus dignissimos facilis neque nulla earum.',
+      role: 'Software Engineer',
+    },
+    {
+      name: "Muskan Tripathi",
+      img: muskan,
+      dis: 'Everybody is differe, which is why we offer styles for every body. Laborum fuga incidunt laboriosam voluptas inre, delectus dignissimos facilis neque nulla earum.',
+      role: ' Medical Coding Trainer',
+    },
+    {
       name: "Anuj Mishra",
-      img: img1,
+      img: Anuj,
       dis: 'Everybody is differe, which is why we offer styles for every body. Laborum fuga incidunt laboriosam voluptas inre, delectus dignissimos facilis neque nulla earum.',
-      role: 'Senior Teacher',
-    },
-    {
-      name: "Gulshan Chaudhari",
-      img: img2,
-      dis: 'Everybody is differe, which is why we offer styles for every body. Laborum fuga incidunt laboriosam voluptas inre, delectus dignissimos facilis neque nulla earum.',
-      role: 'Senior Teacher',
-    },
-    {
-      name: "Yash Shendre",
-      img: img3,
-      dis: 'Everybody is differe, which is why we offer styles for every body. Laborum fuga incidunt laboriosam voluptas inre, delectus dignissimos facilis neque nulla earum.',
-      role: 'Senior Teacher',
+      role: 'Full Stack Developer',
     },
   ]
   return (
@@ -56,7 +72,7 @@ export default function InstructorSlider() {
           data.map((d, i) => (
             <SwiperSlide key={i} className='  '>
               <div className=' px-[20rem] flex items-center flex-col gap-9 py-20 '>
-                <p className=' text-4xl font-semibold text-center py-'>Our Teachers</p>
+                <p className=' text-4xl font-semibold text-center py-'>Our Instructors</p>
                 <p className=' text-center text-xl'>{d.dis}</p>
                 <div className=' flex gap-3'>
                   <img width={50} src={d.img} className=' rounded-full' alt="" />
