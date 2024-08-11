@@ -35,7 +35,7 @@ export const SignUp = () => {
 
     return (
 
-        <div>
+        <div className=' bg-white'>
             <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
                 <div className="sm:mx-auto sm:w-full sm:max-w-sm">
                     <img src={img1} alt="Logo" className='mx-auto w-20 h-10' />
