@@ -7,13 +7,13 @@ import { useState } from 'react'
 
 export const AboutUs = () => {
   return (
-    <div >
+    <div className=' bg-white' >
     <div className="bg-gray-100 min-h-screen py-8 px-4">
       <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg space-y-8">
         <section className="text-center">
           <h1 className="text-4xl font-bold text-gray-900 mb-4 animate-fadeIn">About Us</h1>
           <p className="text-lg text-gray-700 mb-6 animate-fadeIn">
-            Welcome to Lead Barter, your go-to for skill enhancement and upskilling. We empower individuals with the knowledge and skills needed to excel in today’s competitive job market. Our mission is to bridge the gap between education and industry, providing top-notch training for both students and professionals.
+          At Lead Barter, we believe in empowering individuals through education. Our mission is to provide accessible, high-quality online courses that enhance your skills and prepare you for the ever-evolving job market. With our 100% job assistance program, including personal grooming, we ensure that you are not only equipped with the necessary skills but also prepared to present yourself confidently in the professional world. Join us on a journey of continuous learning and professional development.
           </p>
         </section>
 

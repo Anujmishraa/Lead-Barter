@@ -19,14 +19,16 @@ import img8 from "../assets/Medical.png"
 
 // import required modules
 import {Autoplay, Pagination } from 'swiper/modules';
+import { useNavigate } from 'react-router-dom';
 
 
 
 export default function CourseSlider() {
+    const navigate = useNavigate();
     const data = [
         {   title: "Human Resource Management System ",
             img : img5,
-            price: "3000",
+            price: "7000",
         },
         {   title: "Professional English",
             img : img6,
@@ -34,15 +36,15 @@ export default function CourseSlider() {
         },
         {   title: "Business analyst",
             img : img7,
-            price: "3500",
+            price: "7000",
         },
         {   title: "Medical Coding",
             img : img8,
-            price: "5000",
+            price: "12000",
         },
         {   title: "Human Resource Management System ",
           img : img5,
-          price: "3000",
+          price: "7000",
       },
       {   title: "Professional English",
           img : img6,
@@ -50,11 +52,11 @@ export default function CourseSlider() {
       },
       {   title: "Business analyst",
           img : img7,
-          price: "3500",
+          price: "7000",
       },
       {   title: "Medical Coding",
           img : img8,
-          price: "5000",
+          price: "12000",
       },
         // {   title: "BA Flyer",
         //     img : img1,
@@ -92,13 +94,11 @@ export default function CourseSlider() {
       >
         {
             data.map((d, i) => (
-              <SwiperSlide key={i} className=' w-[10rem] hover:scale-105 duration-200 pt-3 shadow-lg p-3 '>
+              <SwiperSlide key={i} onClick={() => navigate("/Courses")} className=' w-[10rem] hover:scale-105 duration-200 pt-3 shadow-lg p-3 '>
                     <img width={250} src={d.img}  alt="" className=' w-[17rem] h-[13rem] shadow' />
                     <p className=' text-lg text-center mt-3 h-[3rem] '>{d.title}</p>
                     <p className=' text-blue-600'>Price Rs {d.price}</p>
                 </SwiperSlide>
-          
-                
             ) )
         }
         

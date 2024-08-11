@@ -1,7 +1,7 @@
 import React from 'react'
-import man1 from "../assets/Logo1.png"
+import man1 from "../../assets/Logo1.png"
 
-export const Login = () => {
+export const EmailVerify = () => {
     return (
         <div>
             <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
