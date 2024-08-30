@@ -8,6 +8,7 @@ import { useNavigate } from 'react-router-dom'
 import { getAllCourses } from "../services/operations/courseDetailsAPI"
 import { BuyCourse } from '../services/operations/studentFeaturesAPI'
 import { addToCart } from '../redux/slices/cartSlice'
+// import img9 from "../assets/MedicalCoding.jpg"
 
 export const CourseComponents = () => {
     const dispatch = useDispatch();
@@ -206,8 +207,8 @@ export const CourseComponents = () => {
             <div className=' bg-white'>{
                 courses.map((item, index) => (
                     <div className={`flex ${index%2 === 0 ? "" : "flex-row-reverse"} gap-20 w-9/12 mx-auto mb-5 shadow p-5`}>
-                        <div className='p-3 bg-blue-400 '>
-                            <img src={item?.thumbnail} alt="" width={300} className='courseImg duration-200' />
+                        <div className='h-[14rem] my-auto p-3 bg-blue-400  flex align-middle justify-center items-center'>
+                            <img src={item?.thumbnail} alt="" className='courseImg duration-200 w-[30rem] ' />
                         </div>
                         <div className=''>
                             <h2 className='text-center mt-2 text-3xl font-semibold'>

@@ -13,7 +13,11 @@ import img5 from "../assets/Hrms.png.png"
 import img6 from "../assets/Epp.png"
 import img7 from "../assets/Business.png"
 import img8 from "../assets/Medical.png"
-
+// import img9 from "../assets/MedicalCoding.jpg"
+import img10 from "../assets/MedicalFinal.jpg"
+import img11 from "../assets/HrmsFinal.jpg"
+import img12 from "../assets/BusinessFinal.jpg"
+import img13 from "../assets/EnglishFinal.jpg"
 
 // import './styles.css';
 
@@ -27,35 +31,35 @@ export default function CourseSlider() {
     const navigate = useNavigate();
     const data = [
         {   title: "Human Resource Management System ",
-            img : img5,
+            img : img11,
             price: "7000",
         },
         {   title: "Professional English",
-            img : img6,
+            img : img13,
             price: "4000",
         },
         {   title: "Business analyst",
-            img : img7,
-            price: "7000",
+            img : img12,
+            price: "10000",
         },
         {   title: "Medical Coding",
-            img : img8,
-            price: "12000",
+            img : img10,
+            price: "16000",
         },
         {   title: "Human Resource Management System ",
-          img : img5,
+          img : img11,
           price: "7000",
       },
       {   title: "Professional English",
-          img : img6,
+          img : img13,
           price: "4000",
       },
       {   title: "Business analyst",
-          img : img7,
+          img : img12,
           price: "7000",
       },
       {   title: "Medical Coding",
-          img : img8,
+          img : img10,
           price: "12000",
       },
         // {   title: "BA Flyer",

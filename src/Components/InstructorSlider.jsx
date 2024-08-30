@@ -22,34 +22,29 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 export default function InstructorSlider() {
   const data = [
     {
-      name: "Nidhi Tiwari",
+      name: "Nidhi Tiwari ",
       img: nidhi,
-      dis: 'Everybody is differe, which is why we offer styles for every body. Laborum fuga incidunt laboriosam voluptas inre, delectus dignissimos facilis neque nulla earum.',
-      role: 'HRMS Trainer',
+      dis: "Meet our expert instructors, who bring a wealth of knowledge and experience to guide you through your learning journey.",
     },
     {
       name: "Avinash Pandey",
       img: avinash,
-      dis: 'Everybody is differe, which is why we offer styles for every body. Laborum fuga incidunt laboriosam voluptas inre, delectus dignissimos facilis neque nulla earum.',
-      role: 'Senior Teacher',
+      dis: "Meet our expert instructors, who bring a wealth of knowledge and experience to guide you through your learning journey.",
     },
     {
       name: "Shreyash Chavhan",
       img: shreyash,
-      dis: 'Everybody is differe, which is why we offer styles for every body. Laborum fuga incidunt laboriosam voluptas inre, delectus dignissimos facilis neque nulla earum.',
-      role: 'Software Engineer',
+      dis: "Meet our expert instructors, who bring a wealth of knowledge and experience to guide you through your learning journey.",
     },
     {
       name: "Muskan Tripathi",
       img: muskan,
-      dis: 'Everybody is differe, which is why we offer styles for every body. Laborum fuga incidunt laboriosam voluptas inre, delectus dignissimos facilis neque nulla earum.',
-      role: ' Medical Coding Trainer',
+      dis: "Meet our expert instructors, who bring a wealth of knowledge and experience to guide you through your learning journey.",
     },
     {
       name: "Anuj Mishra",
       img: Anuj,
-      dis: 'Everybody is differe, which is why we offer styles for every body. Laborum fuga incidunt laboriosam voluptas inre, delectus dignissimos facilis neque nulla earum.',
-      role: 'Full Stack Developer',
+      dis: "Meet our expert instructors, who bring a wealth of knowledge and experience to guide you through your learning journey.",
     },
   ]
   return (
@@ -75,7 +70,7 @@ export default function InstructorSlider() {
                 <p className=' text-4xl font-semibold text-center py-'>Our Instructors</p>
                 <p className=' text-center text-xl'>{d.dis}</p>
                 <div className=' flex gap-3'>
-                  <img width={50} src={d.img} className=' rounded-full' alt="" />
+                  <img  src={d.img} className=' rounded-full w-[4rem] h-[4rem] ' alt="" />
                   <div>
                     <p className=' font-semibold'>{d.name}</p>
                     <p className=' text-[#111111a6] '>{d.role}</p>
